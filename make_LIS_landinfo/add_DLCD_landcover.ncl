@@ -15,8 +15,8 @@ end setvalues
 setfileoption("bin","ReadByteOrder","BigEndian")
 NCAR_path   = "/g/data/w35/LIS/LIS_PARAMS/LIS_PARAMS/UMD/1KM/landcover_CABLE_NCAR.1gd4r"
 NCAR_LC     = fbindirread (NCAR_path, 0, (/15000,36000/), "float")
-NCAR_LC_int = tointeger(NCAR_LC)
-NCAR_LC_int@_FillValue = 16
+NCAR_LC_int = NCAR_LC ;tointeger(NCAR_LC)
+; NCAR_LC_int@_FillValue = 16
 
 NCAR_LC_int!0   = "lat"
 NCAR_LC_int!1   = "lon"
@@ -46,10 +46,10 @@ do i = -44,-10
 
   ; ================================ insert DLCD_LC ===================================
   printVarSummary(NCAR_LC_int)
-  NCAR_LC_int({lat_s-0.005:lat_e+0.005},{lon_s-0.005:lon_e+0.005}) = DLCD_lat*1
+  NCAR_LC_int({lat_s-0.005:lat_e+0.005},{lon_s-0.005:lon_e+0.005}) = DLCD_lat*1.
 end do
 
-NCAR_LC_int@_FillValue = 16
+NCAR_LC_int@_FillValue = 16.
 
 setfileoption("bin","WriteByteOrder","BigEndian")
 file_out = "./binary_file/NCAR_AU_Dynamic_land_cover_dataset.1gd4r"
@@ -80,7 +80,7 @@ filedimdef( fout,dimNames,dimSizes,dimUnlim)
 
 filevardef( fout, "lat", "float", "lat")
 filevardef( fout, "lon", "float", "lon")
-filevardef( fout, "Landcover", "integer", (/ "lat", "lon" /))
+filevardef( fout, "Landcover", "float", (/ "lat", "lon" /))
 setfileoption(fout,"DefineMode",False)
 
 fout->lat@long_name     = "latitude"
@@ -93,12 +93,12 @@ fout->lon@long_name     = "longitude"
 fout->lon@standard_name = "longitude"
 fout->lon@axis          = "X"
 fout->lon@units         = "degrees_East"
-fout->lon               = NCAR_LC_int&lon
+fout->lon               = NCAR_LC_int&lon*1.
 
 fout->Landcover@long_name     = "land cover type"
 fout->Landcover@units         = "-"
 fout->Landcover@_FillValue    = 16
-fout->Landcover               = NCAR_LC_int*1
+fout->Landcover               = NCAR_LC_int*1.
 
 ; ============================== Check output file ===============================
 

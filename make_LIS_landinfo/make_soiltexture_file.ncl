@@ -204,13 +204,13 @@ dimSizes = (/ nlat,  nlon/)
 dimUnlim = (/False, False/)
 filedimdef( fout,dimNames,dimSizes,dimUnlim)
 
-filevardef( fout, "lat", "float", "lat")
-filevardef( fout, "lon", "float", "lon")
-filevardef( fout, "SAND", "float", (/ "lat", "lon" /))
-filevardef( fout, "CLAY", "float", (/ "lat", "lon" /))
-filevardef( fout, "SILT", "float", (/ "lat", "lon" /))
-filevardef( fout, "OC", "float", (/ "lat", "lon" /))
-filevardef( fout, "BULK_DEN", "float", (/ "lat", "lon" /))
+filevardef( fout, "lat", "double", "lat")
+filevardef( fout, "lon", "double", "lon")
+filevardef( fout, "SAND", "double", (/ "lat", "lon" /))
+filevardef( fout, "CLAY", "double", (/ "lat", "lon" /))
+filevardef( fout, "SILT", "double", (/ "lat", "lon" /))
+filevardef( fout, "OC", "double", (/ "lat", "lon" /))
+filevardef( fout, "BULK_DEN", "double", (/ "lat", "lon" /))
 
 setfileoption(fout,"DefineMode",False)
 
@@ -221,8 +221,8 @@ fout->lat@long_name     = "latitude"
 fout->lat@standard_name = "latitude"
 fout->lat@axis          = "Y"
 fout->lat@units         = "degrees_North"
-fout->lat@_FillValue    = -9999.;flt2dble()
-fout->lat               = lat*1.
+fout->lat@_FillValue    = flt2dble(-9999.)
+fout->lat               = flt2dble(lat*1.)
 
 printVarSummary(fout->lon)
 printVarSummary(lon)
@@ -230,8 +230,8 @@ fout->lon@long_name     = "longitude"
 fout->lon@standard_name = "longitude"
 fout->lon@axis          = "X"
 fout->lon@units         = "degrees_East"
-fout->lon@_FillValue    = -9999.
-fout->lon               = lon*1.
+fout->lon@_FillValue    = flt2dble(-9999.)
+fout->lon               = flt2dble(lon*1.)
 
 
 printVarSummary(sand)
@@ -239,33 +239,33 @@ printVarSummary(fout->SAND)
 fout->SAND@long_name     = "soil sand fraction"
 fout->SAND@units         = "-"
 fout->SAND@comment       = "Column of soil between 0 and 460 cm." ;
-fout->SAND@_FillValue    = -9999.
-fout->SAND               = sand*1.
+fout->SAND@_FillValue    = flt2dble(-9999.)
+fout->SAND               = flt2dble(sand*1.)
 
 
 fout->CLAY@long_name     = "soil clay fraction"
 fout->CLAY@units         = "-"
 fout->CLAY@comment       = "Column of soil between 0 and 460 cm." ;
-fout->CLAY@_FillValue    = -9999.
-fout->CLAY               = clay*1.
+fout->CLAY@_FillValue    = flt2dble(-9999.)
+fout->CLAY               = flt2dble(clay*1.)
 
 fout->SILT@long_name     = "soil silt fraction"
 fout->SILT@units         = "-"
 fout->SILT@comment       = "Column of soil between 0 and 460 cm." ;
-fout->SILT@_FillValue    = -9999.
-fout->SILT               = silt*1.
+fout->SILT@_FillValue    = flt2dble(-9999.)
+fout->SILT               = flt2dble(silt*1.)
 
 fout->OC@long_name       = "soil organic carbon"
 fout->OC@units           = "kg/kg"
 fout->OC@comment         = "Column of soil between 0 and 460 cm." ;
-fout->OC@_FillValue      = -9999.
-fout->OC                 = organic*1.
+fout->OC@_FillValue      = flt2dble(-9999.)
+fout->OC                 = flt2dble(organic*1.)
 
 fout->BULK_DEN@long_name   = "soil bulk density"
 fout->BULK_DEN@units       = "kg m-3"
 fout->BULK_DEN@comment     = "Column of soil between 0 and 460 cm." ;
-fout->BULK_DEN@_FillValue  = -9999.
-fout->BULK_DEN             = rhosoil*1.
+fout->BULK_DEN@_FillValue  = flt2dble(-9999.)
+fout->BULK_DEN             = flt2dble(rhosoil*1.)
 
 print("Exit DefineMode")
 end
