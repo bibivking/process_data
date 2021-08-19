@@ -1,0 +1,231 @@
+ Copyright (C) 1995-2019 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 6.6.2
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+Variable: lat
+Type: float
+Total Size: 59608 bytes
+            14902 values
+Number of Dimensions: 1
+Dimensions and sizes:	[latitude | 14902]
+Coordinates: 
+            latitude: [-45.00362..-10.00117]
+Number Of Attributes: 3
+  units :	degrees_north
+  long_name :	latitude
+  typeConversion_op_ncl :	double converted to float
+(0)	nLat = 100 nLon = 4501
+(0)	Lat
+
+
+Variable: Lat
+Type: float
+Total Size: 400 bytes
+            100 values
+Number of Dimensions: 1
+Dimensions and sizes:	[100]
+Coordinates: 
+(0)	-35.995
+(1)	-35.985
+(2)	-35.975
+(3)	-35.965
+(4)	-35.955
+(5)	-35.945
+(6)	-35.935
+(7)	-35.925
+(8)	-35.915
+(9)	-35.905
+(10)	-35.895
+(11)	-35.885
+(12)	-35.875
+(13)	-35.865
+(14)	-35.855
+(15)	-35.845
+(16)	-35.835
+(17)	-35.825
+(18)	-35.815
+(19)	-35.805
+(20)	-35.795
+(21)	-35.785
+(22)	-35.775
+(23)	-35.765
+(24)	-35.755
+(25)	-35.745
+(26)	-35.735
+(27)	-35.725
+(28)	-35.715
+(29)	-35.705
+(30)	-35.695
+(31)	-35.685
+(32)	-35.675
+(33)	-35.665
+(34)	-35.655
+(35)	-35.645
+(36)	-35.635
+(37)	-35.625
+(38)	-35.615
+(39)	-35.605
+(40)	-35.595
+(41)	-35.585
+(42)	-35.575
+(43)	-35.565
+(44)	-35.555
+(45)	-35.545
+(46)	-35.535
+(47)	-35.525
+(48)	-35.515
+(49)	-35.505
+(50)	-35.495
+(51)	-35.485
+(52)	-35.475
+(53)	-35.465
+(54)	-35.455
+(55)	-35.445
+(56)	-35.435
+(57)	-35.425
+(58)	-35.415
+(59)	-35.405
+(60)	-35.395
+(61)	-35.385
+(62)	-35.375
+(63)	-35.365
+(64)	-35.355
+(65)	-35.345
+(66)	-35.335
+(67)	-35.325
+(68)	-35.315
+(69)	-35.305
+(70)	-35.295
+(71)	-35.285
+(72)	-35.275
+(73)	-35.265
+(74)	-35.255
+(75)	-35.245
+(76)	-35.235
+(77)	-35.225
+(78)	-35.215
+(79)	-35.205
+(80)	-35.195
+(81)	-35.185
+(82)	-35.175
+(83)	-35.165
+(84)	-35.155
+(85)	-35.145
+(86)	-35.135
+(87)	-35.125
+(88)	-35.115
+(89)	-35.105
+(90)	-35.095
+(91)	-35.085
+(92)	-35.075
+(93)	-35.065
+(94)	-35.055
+(95)	-35.045
+(96)	-35.035
+(97)	-35.025
+(98)	-35.015
+(99)	-35.005
+(0)	lat_idx = 0
+(0)	lat_idx = 1
+(0)	lat_idx = 2
+(0)	lat_idx = 3
+(0)	lat_idx = 4
+(0)	lat_idx = 5
+(0)	lat_idx = 6
+(0)	lat_idx = 7
+(0)	lat_idx = 8
+(0)	lat_idx = 9
+(0)	lat_idx = 10
+(0)	lat_idx = 11
+(0)	lat_idx = 12
+(0)	lat_idx = 13
+(0)	lat_idx = 14
+(0)	lat_idx = 15
+(0)	lat_idx = 16
+(0)	lat_idx = 17
+(0)	lat_idx = 18
+(0)	lat_idx = 19
+(0)	lat_idx = 20
+(0)	lat_idx = 21
+(0)	lat_idx = 22
+(0)	lat_idx = 23
+(0)	lat_idx = 24
+(0)	lat_idx = 25
+(0)	lat_idx = 26
+(0)	lat_idx = 27
+(0)	lat_idx = 28
+(0)	lat_idx = 29
+(0)	lat_idx = 30
+(0)	lat_idx = 31
+(0)	lat_idx = 32
+(0)	lat_idx = 33
+(0)	lat_idx = 34
+(0)	lat_idx = 35
+(0)	lat_idx = 36
+(0)	lat_idx = 37
+(0)	lat_idx = 38
+(0)	lat_idx = 39
+(0)	lat_idx = 40
+(0)	lat_idx = 41
+(0)	lat_idx = 42
+(0)	lat_idx = 43
+(0)	lat_idx = 44
+(0)	lat_idx = 45
+(0)	lat_idx = 46
+(0)	lat_idx = 47
+(0)	lat_idx = 48
+(0)	lat_idx = 49
+(0)	lat_idx = 50
+(0)	lat_idx = 51
+(0)	lat_idx = 52
+(0)	lat_idx = 53
+(0)	lat_idx = 54
+(0)	lat_idx = 55
+(0)	lat_idx = 56
+(0)	lat_idx = 57
+(0)	lat_idx = 58
+(0)	lat_idx = 59
+(0)	lat_idx = 60
+(0)	lat_idx = 61
+(0)	lat_idx = 62
+(0)	lat_idx = 63
+(0)	lat_idx = 64
+(0)	lat_idx = 65
+(0)	lat_idx = 66
+(0)	lat_idx = 67
+(0)	lat_idx = 68
+(0)	lat_idx = 69
+(0)	lat_idx = 70
+(0)	lat_idx = 71
+(0)	lat_idx = 72
+(0)	lat_idx = 73
+(0)	lat_idx = 74
+(0)	lat_idx = 75
+(0)	lat_idx = 76
+(0)	lat_idx = 77
+(0)	lat_idx = 78
+(0)	lat_idx = 79
+(0)	lat_idx = 80
+(0)	lat_idx = 81
+(0)	lat_idx = 82
+(0)	lat_idx = 83
+(0)	lat_idx = 84
+(0)	lat_idx = 85
+(0)	lat_idx = 86
+(0)	lat_idx = 87
+(0)	lat_idx = 88
+(0)	lat_idx = 89
+(0)	lat_idx = 90
+(0)	lat_idx = 91
+(0)	lat_idx = 92
+(0)	lat_idx = 93
+(0)	lat_idx = 94
+(0)	lat_idx = 95
+(0)	lat_idx = 96
+(0)	lat_idx = 97
+(0)	lat_idx = 98
+(0)	lat_idx = 99
+(0)	16
+(0)	2

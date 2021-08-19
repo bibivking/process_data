@@ -1,0 +1,14 @@
+rm: cannot remove './binary_file/NCAR_AU_Dynamic_land_cover_dataset_lat-38.5.1gd4r': No such file or directory
+
+======================================================================================
+                  Resource Usage on 2021-08-19 18:22:00:
+   Job Id:             27024566.gadi-pbs
+   Project:            w35
+   Exit Status:        0
+   Service Units:      28.21
+   NCPUs Requested:    1                      NCPUs Used: 1               
+                                           CPU Time Used: 01:35:09                                   
+   Memory Requested:   128.0GB               Memory Used: 3.46GB          
+   Walltime requested: 03:00:00            Walltime Used: 01:35:13        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================
