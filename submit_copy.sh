@@ -12,4 +12,4 @@
 
 #source activate science
 cd /g/data/w35/mm3972/scripts/process_data
-ncl regrid_off-CABLE_to_lis-CABLE.ncl
+ncl regrid_off-CABLE_to_lis-CABLE_copy.ncl

@@ -1,0 +1,26 @@
+ Copyright (C) 1995-2019 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 6.6.2
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+fatal:syntax error: line 27 in file make_gridinfo_not_change_with_depth.ncl before or near ' 
+system('
+-------^
+
+fatal:error in statement
+fatal:Syntax Error in block, block not executed
+fatal:error at line 51 in file make_gridinfo_not_change_with_depth.ncl
+
+
+======================================================================================
+                  Resource Usage on 2021-09-24 23:06:23:
+   Job Id:             28965326.gadi-pbs
+   Project:            w35
+   Exit Status:        0
+   Service Units:      0.03
+   NCPUs Requested:    1                      NCPUs Used: 1               
+                                           CPU Time Used: 00:00:05                                   
+   Memory Requested:   128.0GB               Memory Used: 439.3MB         
+   Walltime requested: 02:00:00            Walltime Used: 00:00:07        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================
