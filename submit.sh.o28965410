@@ -1,30 +1,0 @@
- Copyright (C) 1995-2019 - All Rights Reserved
- University Corporation for Atmospheric Research
- NCAR Command Language Version 6.6.2
- The use of this software is governed by a License Agreement.
- See http://www.ncl.ucar.edu/ for more details.
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-warning:Right hand side has no dimension name can not delete dimension of a file, use (/ .. /) to avoid this message
-
-======================================================================================
-                  Resource Usage on 2021-09-24 23:07:57:
-   Job Id:             28965410.gadi-pbs
-   Project:            w35
-   Exit Status:        0
-   Service Units:      0.07
-   NCPUs Requested:    1                      NCPUs Used: 1               
-                                           CPU Time Used: 00:00:09                                   
-   Memory Requested:   128.0GB               Memory Used: 1.39GB          
-   Walltime requested: 02:00:00            Walltime Used: 00:00:14        
-   JobFS requested:    100.0MB                JobFS used: 0B              
-======================================================================================
